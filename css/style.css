@@ -1,0 +1,369 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Avenir;
+}
+
+body{
+    background-color: #090b13;
+}
+
+/* HEADER */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1.3rem 1rem 2.7rem;
+    background-color: #090b13;
+    width:100%;
+    position: fixed;
+}
+
+.header__logo{
+    width: 6.4rem;
+}
+
+.header__btn-container{
+    display:flex;
+}
+
+.header__btn1{
+    height: 4rem;
+    font-size: 13px;
+    padding: 0.7rem 1.2rem 0.8rem 1.2rem;
+    margin-left: 1rem;
+    background-color: #fc3c36;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.header__btn2{
+    height: 4rem;
+    font-size: 13px;
+    padding: 0.7rem 0.9rem 0.8rem 0.9rem;
+    margin-left: 1rem;
+    background-color: #4E4A59;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+/* MAIN */
+
+.main{
+    background-image: url(/images/image-1portada.jpeg);
+    background-size:cover;
+    color:#f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 1.6rem;
+    padding-bottom: 2.2rem;
+}
+
+.main__logo{
+    width: 16rem;
+    margin-top: 13.6rem;
+}
+
+.main__title{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.main__btn{
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 15px;
+    color:#f9f9f9;
+    background-color: #6421ff;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 1.4rem 2.4rem 1.4rem 2.4rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.main__signup{
+    color:#f9f9f9;
+    font-size: 14px;
+    margin-top: 2.3rem;
+    letter-spacing: .2px;
+}
+
+@keyframes efecto_chevron{
+    0%{transform: translate(0px, 0px)}
+    10%{transform: translate(0px, 0px)}
+    30%{transform: translate(0px, -5px)}
+    35%{transform: translate(0px, -5px)}
+    45%{transform: translate(0px, -1px)}
+    50%{transform: translate(0px, -3px)}
+    62%{transform: translate(0px, 0px)}
+    100%{transform: translate(0px, 0px)}
+}
+
+.main__chevron{
+    margin-top: 3rem;
+    animation-name: efecto_chevron;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+/* PLANS */
+
+.plans{
+    background-color: #090b13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem 1.6rem;
+}
+
+.plans__title{
+    color:#f9f9f9;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 8rem;
+}
+
+.plans__card{
+    padding:0rem 4rem;
+}
+
+.plans__card-2{
+    padding:0rem 4rem;
+    margin-bottom: 12rem;
+    margin-top: 10rem;
+    background-image: url(/images/fondocard.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 6.5rem;
+}
+
+.plans__card-logo{
+    width:100%;
+}
+
+.plans__card-price{
+    color:#f9f9f9;
+    margin-top: 2.4rem;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.plans__card-p{
+    color:#cacaca;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+}
+
+.plans__card-btn{
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 15px;
+    color:#f9f9f9;
+    background-color: #6421ff;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 1.4rem 2.4rem 1.4rem 2.4rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.plans__extracharge{
+    color: #cacaca;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/* WATCH  */
+
+.watch{
+    background-color: #090b13;
+    padding: 3.2rem 1.6rem;
+}
+
+.watch__container-title{
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+}
+
+.watch__container-p{
+    color:#cacaca;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 2rem;
+}
+
+.watch__img{
+    width: 100%;
+}
+
+/* ESPN */
+
+.espn{
+    background-color: #090b13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1.6rem;
+}
+
+.espn__container{
+    text-align: center;
+    padding: 0rem .64rem;
+}
+
+.espn__container-title{
+    color: #f9f9f9;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.espn__container-subtitle{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.espn__container-p{
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.espn__container-subtitle, .espn__container-p{
+    color: #cacaca;
+    margin-bottom: 2rem;
+}
+
+.espn__img{
+    width: 100%;
+}
+
+/* SIMPSONS */
+
+.simpsons{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1373d1;
+    padding-top:3.2rem;
+}
+
+.simpsons__container{
+    padding: 0rem .64rem;
+}
+
+.simpsons__title{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+    color: #f9f9f9;
+}
+
+.simpsons__p{
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 1.6rem;
+    font-weight: 400;
+    color: #f9f9f9;
+}
+
+.simpsons__copyright{
+    color: #cacaca;
+    font-size: 11px;
+    line-height: 15px;
+    margin-bottom: 4rem;
+}
+
+.simpsons__p, .simpsons__copyright, .simpsons__title{
+    text-align: center;
+}
+
+.simpsons__img{
+    width: 100%;
+}
+
+/* DEVICES */
+
+.device{
+    background-color:#090b13;
+    padding:3.2rem 1.6rem;
+}
+
+.device__title{
+    color: #f9f9f9;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.device__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.device__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 12px);
+    margin-bottom: 2rem;
+}
+
+.device__card-title{
+    color:#f9f9f9;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 2rem;
+    margin-bottom: 1.6rem;
+    text-align: center;
+}
+
+.device__card-ul{
+    padding: 0rem;
+}
+
+.device__card-li{
+    color: #cacaca;
+    list-style: none;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    padding: 0rem;
+}
+
+.device__card-img{
+    width:100%;
+}
+
+/* FAQ */
+
+/* FOOTER */
+
+.footer__logo{
+    width:100%;
+}
