@@ -68,7 +68,7 @@ body{
 
 .main__logo{
     width: 16rem;
-    margin-top: 13.6rem;
+    margin-top: 40vw;
 }
 
 .main__title{
@@ -362,8 +362,112 @@ body{
 
 /* FAQ */
 
+.faq{
+    background-color: #090b13;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3.2rem 1.6rem;
+}
+
+.faq__title{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    color: #f9f9f9;
+    text-align: center;
+}
+
+.faq__card{
+    background-color: #35313F;
+    width: 100%;
+    margin-top: 1.6rem;
+    padding: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__card-question{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #f9f9f9;
+    margin: 0;
+}
+
+.faq__card-icon{
+    color: #f9f9f9;
+}
+
 /* FOOTER */
 
-.footer__logo{
-    width:100%;
+.footer{
+    background-color: #090b13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
 }
+
+.footer__logo{
+    width:8rem;
+    align-self: center;
+    margin-top: 2rem;
+    margin-bottom:1rem;
+}
+
+.footer__container-ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer_container-globe{
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+.footer__container-lang{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__container-lang a, .footer__container-li a{
+    color: #cccccc;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .2px;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.footer__container-lang, .footer__container-li{
+    padding: 0.8rem 1.2rem;
+}
+
+.footer__chevron{
+    margin-left: 0.5rem;
+}
+
+.footer__copyright{
+    padding: 0rem 2rem;
+}
+
+.footer__adress{
+    padding: 0rem 1.5rem;
+}
+
+.footer__copyright, .footer__adress{
+    color: #cacaca;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .2px;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+}
+
+/* MOBILE L */
+
