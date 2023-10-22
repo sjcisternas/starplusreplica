@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-size: 62.5%;
     font-family: Avenir;
+    list-style: none;
 }
 
 body{
@@ -21,6 +22,7 @@ body{
     background-color: #090b13;
     width:100%;
     position: fixed;
+    z-index: 20;
 }
 
 .header__logo{
@@ -40,6 +42,7 @@ body{
     color: #f9f9f9;
     border: none;
     border-radius: 0.4rem;
+    transition: all 0.2s;
 }
 
 .header__btn2{
@@ -51,12 +54,13 @@ body{
     color: #f9f9f9;
     border: none;
     border-radius: 0.4rem;
+    transition: all 0.2s;
 }
 
 /* MAIN */
 
 .main{
-    background-image: url(/images/image-1portada.jpeg);
+    background-image: url(/images/image-1portada1.png);
     background-size:cover;
     color:#f9f9f9;
     display: flex;
@@ -82,6 +86,7 @@ body{
 
 .main__btn{
     width: 100%;
+    max-width: 540px;
     margin-top: 1rem;
     font-size: 15px;
     color:#f9f9f9;
@@ -112,7 +117,7 @@ body{
 }
 
 .main__chevron{
-    margin-top: 3rem;
+    margin-top: 10vw;
     animation-name: efecto_chevron;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
@@ -137,8 +142,14 @@ body{
     margin-bottom: 8rem;
 }
 
+.plans__container{
+    display: flex;
+    flex-direction: column;
+}
+
 .plans__card{
     padding:0rem 4rem;
+    max-width: 380px;
 }
 
 .plans__card-2{
@@ -149,6 +160,7 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 6.5rem;
+    max-width: 380px;
 }
 
 .plans__card-logo{
@@ -196,7 +208,7 @@ body{
 
 .watch{
     background-color: #090b13;
-    padding: 3.2rem 1.6rem;
+    padding: 10vw 5vw;
 }
 
 .watch__container-title{
@@ -218,6 +230,10 @@ body{
     width: 100%;
 }
 
+.watch__img-2{
+    display:none;
+}
+
 /* ESPN */
 
 .espn{
@@ -225,7 +241,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 1.6rem;
+    padding: 10vw 5vw;
 }
 
 .espn__container{
@@ -263,13 +279,19 @@ body{
 
 .simpsons{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     background-color: #1373d1;
     padding-top:3.2rem;
 }
 
 .simpsons__container{
-    padding: 0rem .64rem;
+    padding: 10vw 5vw;
+    max-width: 640px;
+    width:57%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .simpsons__title{
@@ -303,11 +325,12 @@ body{
     width: 100%;
 }
 
+
 /* DEVICES */
 
 .device{
     background-color:#090b13;
-    padding:3.2rem 1.6rem;
+    padding:10vw 5vw;
 }
 
 .device__title{
@@ -366,7 +389,7 @@ body{
     background-color: #090b13;
     display: flex;
     flex-wrap: wrap;
-    padding: 3.2rem 1.6rem;
+    padding: 10vw 5vw;
 }
 
 .faq__title{
@@ -375,6 +398,7 @@ body{
     font-weight: 700;
     color: #f9f9f9;
     text-align: center;
+    width: 100%;
 }
 
 .faq__card{
@@ -469,5 +493,557 @@ body{
     text-align: center;
 }
 
+.main__btn, .plans__card-btn{
+    transition: background-color .2s,
+    opacity 0.02s,
+    width 0.02s,
+    height 0.02s;
+}
+
+.main__btn:hover, .plans__card-btn:hover{
+    background-color: #8525eb;
+    transition: all .2s;
+}
+
+.main__btn:focus{
+    opacity: 80%;
+    width: 97%;
+    padding: 3%;    
+    transition: all 0.02s;
+}
+
+.plans__card-btn:focus{
+    opacity: 80%;    
+    transition: all 0.02s;
+}
+
+.header__btn1:hover{
+    background-color: #ff453f;
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 1px;
+}
+
+.header__btn2:hover{
+    background-color: #35313F;
+}
+
+.footer__container-lang a:hover, .footer__container-li a:hover{
+    color:#FFFFFF;
+}
+
+.main__signup:hover{
+    color:#f9f9f9;
+    font-size: 14px;
+    margin-top: 2.3rem;
+    letter-spacing: .2px;
+}
+
 /* MOBILE L */
 
+@media (min-width:425px){
+
+    /* HEADER */
+    
+    .header{
+        padding: 0.6rem 1.8rem 0.6rem 3.5rem;
+    }
+    
+    /* PLANS */
+
+    .plans__card-2{
+        background-image: url(/images/fondocard-mobileL.png);
+        background-position: center;
+    }
+
+    .plans__card-p{
+        padding: 0rem 1.2rem;
+        line-height: 25px;
+    }
+
+    /* DEVICES */
+
+    .device__title{
+        padding: 0 2rem;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding-bottom: 3rem;
+    }
+}
+
+@media (min-width:478px){
+    
+    /* HEADER */
+
+    .header{
+        padding: 1.5rem 1.8rem 1.5rem 3.5rem;
+    }
+
+    .header__btn1, .header__btn2{
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        transition: all 0.2s;
+    }
+}
+
+/* TABLET */
+
+@media (min-width:770px){
+
+    .header{
+        padding: 1rem 4rem 1rem 5.5rem;
+    }
+
+    .header__logo{
+        width: 8rem;
+    }
+
+    .header__btn1, .header__btn2{
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        padding: 0.8rem 1.8rem;
+        height: 50px;
+        transition: all 0.2s;
+    }
+
+    /* MAIN */
+
+    .main__logo{
+        width: 18rem;
+        margin-top: 26vw;
+        margin-bottom: 2vw;
+    }
+
+    .main__title{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    
+    .main__btn{
+        max-width: 640px;
+        padding: 2.5rem 3.3rem;
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .main__signup{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .main__chevron{
+        margin-top: 2.6vw;
+    }
+
+    /* PLANS */
+
+    .plans{
+        padding: 10vw 5vw;
+    }
+
+    .plans__title{
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 2rem;
+    }
+
+    .plans__container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .plans__card-logo{
+        padding:6rem 1.5rem 0rem 1.5rem;
+    }
+
+    .plans__card{
+        width: calc(33.3% - 16px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left:2rem;
+        padding-right: 2rem;
+    }
+
+    .plans__card-2{
+        width: calc(33.3% - 16px);
+        margin: 0;
+        padding-top: 0;
+        background-position: top;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left:2rem;
+        padding-right: 2rem;
+    }
+
+    .plans__card-price{
+        font-size: 24px;
+        line-height: 34px;
+        margin-top: 3rem;
+    }
+
+   
+
+    .plans__card-p{
+        padding: 0 1.8rem;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .plans__card-btn{
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        width: 81%;
+        margin:0;
+        margin-top: auto;
+    }
+
+    /* WATCH */
+
+    .watch__container-title{
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .watch__img{
+        display: none;
+    }
+
+    .watch__img-2{
+        display:block;
+        width: 100%;
+    }
+
+    /* ESPN */
+
+    .espn{
+        background-color: #090b13;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10vw 5vw;
+    }
+
+    .espn__container{
+        width: 48%;
+        text-align:start;
+        padding: 0 2vw;
+    }
+
+    .espn__img{
+        width: 50%;
+    }
+
+    .espn__container-title{
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .espn__container-subtitle{
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 4rem;
+    }
+
+    .espn__container-p{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    /* SIMPSONS */
+
+    .simpsons{
+        align-items: start;
+        background-image: url(../images/simspons-side.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .simpsons__container{
+        padding: 1vw 5vw;
+        align-items: start;
+        margin-bottom: 35%;
+    }
+
+    .simpsons__title, .simpsons__p{
+        text-align: start;
+    }
+
+    .simpsons__title{
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .simpsons__p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .simpsons__copyright{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .simpsons__img{
+        display:none;
+    }
+
+    /* DEVICE */
+
+    .device__title{
+        font-size: 28px;
+        line-height: 38px;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+
+    .device__card{
+        width: calc(25% - 18px);
+    }
+
+    .device__card-title{
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .device__card-li{
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: .2px;
+    }
+
+    /* FAQ */
+
+    .faq__title{
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .faq__card-question{
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding: 5vw 5vw 6vw 5vw;
+
+    }
+    
+    .footer__container-ul{
+        padding: 0 2rem;
+    }
+
+    .footer__container-li {
+        padding: 0.8rem 1.6rem;
+    }
+
+    .footer__copyright{
+        margin-bottom: 2rem;
+    }
+
+    .footer__adress{
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0rem;
+    }
+
+}
+
+/* PC */
+
+@media (min-width: 1024px){
+    
+    /* MAIN */
+
+    .main{
+        padding-left: 28%;
+        padding-right: 28%;
+    }
+
+    .main__logo{
+        margin-top: 22vw;
+    }
+
+    .main__title{
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 2.4rem;
+    }
+
+    .main__btn{
+        max-width: 700px;
+    }
+
+    .main__signup{
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* PLANS */
+
+    .plans{
+        padding: 5.6vw;
+    }
+
+    .plans__title{
+        font-size: 44px;
+        line-height: 54px;
+    }
+
+    .plans__card, .plans__card-2{
+        width: calc(33.3% - 16px);
+    }
+
+
+    .plans__card-price{
+        font-size: 28px;
+        line-height: 38px;
+        padding: 0 3.5rem;
+    }
+
+    .plans__card-btn{
+        width: 80%;
+        height: 60px;
+    }
+
+    .plans__card-p{
+        font-size: 18px;
+        line-height: 28px;
+        padding: 0 2.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .plans__extracharge{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    /* WATCH */
+
+    .watch{
+        padding: 5.6vw;
+    }
+
+    .watch__container-title{
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 24px;
+    }
+
+    .watch__container-p{
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: .2px;
+    }
+
+    /* ESPN */
+
+    .espn{
+        padding: 5.6vw;
+    }
+
+    .espn__container{
+        padding: 0 2vw;
+        width: 50%;
+    }
+
+    .espn__container-title{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .espn__container-subtitle{
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: .2px;
+    }
+
+    /* SIMPSONS */
+
+    .simpsons__container{
+        margin-bottom: 38%;
+        transition: all 0.2s;
+    }
+
+    .simpsons__title{
+        margin-bottom: 24px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .simpsons__p{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 24px;
+        letter-spacing: .2px;
+    }
+
+    /* DEVICES */
+
+    .device{
+        padding: 5.6vw;
+    }
+
+    .device__title{
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 24px;
+    }
+
+    .device__card-title{
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 24px;
+    }
+
+    .device__card-li{
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: .2px;
+    }
+
+    /* FAQ */
+
+    .faq{
+        padding: 5.6vw;
+    }
+
+    .faq__title{
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 24px;
+    }
+
+    .faq__card-question{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* FOOTER */
+
+    .footer__container-lang, .footer__container-li{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media (min-width: 1440px){
+    .simpsons__container{
+        margin-bottom: 50%;
+        transition: all 0.2s;
+    }
+
+    .footer__adress{
+        padding: 0 12rem;
+    }
+}
