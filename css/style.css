@@ -60,7 +60,7 @@ body{
 /* MAIN */
 
 .main{
-    background-image: url(/images/image-1portada1.png);
+    background-image: url(../images/image-1portada1.png);
     background-size:cover;
     color:#f9f9f9;
     display: flex;
@@ -156,7 +156,7 @@ body{
     padding:0rem 4rem;
     margin-bottom: 12rem;
     margin-top: 10rem;
-    background-image: url(/images/fondocard.png);
+    background-image: url(../images/fondocard.png);
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 6.5rem;
@@ -551,7 +551,7 @@ body{
     /* PLANS */
 
     .plans__card-2{
-        background-image: url(/images/fondocard-mobileL.png);
+        background-image: url(../images/fondocard-mobileL.png);
         background-position: center;
     }
 
