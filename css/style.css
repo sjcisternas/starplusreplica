@@ -117,6 +117,7 @@ body{
     100%{transform: translate(0px, 0px)}
 }
 
+
 .main__chevron{
     margin-top: 10vw;
     animation-name: efecto_chevron;
@@ -289,7 +290,6 @@ body{
 .simpsons__container{
     padding: 10vw 5vw;
     max-width: 640px;
-    width:57%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -718,7 +718,7 @@ body{
     }
 
     .watch__img-2{
-        display:block;
+        display: block;
         width: 100%;
     }
 
@@ -772,6 +772,7 @@ body{
         padding: 1vw 5vw;
         align-items: start;
         margin-bottom: 35%;
+        width:57%;
     }
 
     .simpsons__title, .simpsons__p{
