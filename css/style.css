@@ -60,8 +60,9 @@ body{
 /* MAIN */
 
 .main{
-    background-image: url(../images/image-1portada1.png);
+    background-image: url(../images/image-1portada.png);
     background-size:cover;
+    background-position: top;
     color:#f9f9f9;
     display: flex;
     flex-direction: column;
@@ -409,6 +410,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
 }
 
 .faq__card-question{
@@ -866,6 +868,7 @@ body{
     /* MAIN */
 
     .main{
+        background-image: url(../images/image-1portada1.png);
         padding-left: 28%;
         padding-right: 28%;
     }
